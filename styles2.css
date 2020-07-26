@@ -1,0 +1,77 @@
+body{margin: 0;
+}
+a{text-decoration: none;
+color:white}
+a:hover{color:#d81b60}
+
+.navbar{display:flex;
+    background-color:#ffcdd2;
+    justify-content:space-between;
+    align-items:center;
+    padding:4px 8px;
+    position:sticky;
+    top:0;
+}
+.navbar_logo{font-size:50px;
+            font-family: 'Patrick Hand', cursive;
+            Color:black;
+}
+
+.navbar_logo i {color:white
+}
+.navbar_menu{font-family: 'Patrick Hand', cursive;
+            font-size: 30px;
+            color:black;
+            display:flex;
+          list-style: none;
+          padding-left: 0;
+        }
+.navbar_menu li{padding:8px 12px;
+}
+
+.navbar_links i {  text-decoration: none;
+                    color:white;
+                  display:flex;}
+.navbar_links i:hover{color:#d81b60}
+
+/*본문 */
+.main {margin-right:10px}
+
+li{display:flex;
+flex-direction:row;
+justify-content:center;
+}
+img{width:250px; height:250px}
+main p{font-family: 'Patrick Hand', cursive;
+            font-size: 25px;
+            color:black;
+            padding:5px;
+
+}
+.birthdate h2{font-family: 'Patrick Hand', cursive;
+            font-size: 30px;
+            color:black;
+          text-align:left}
+.birthdate i {color:#a00037;
+margin:5px}
+
+.place h2{font-family: 'Patrick Hand', cursive;
+            font-size: 30px;
+            color:black;
+          text-align:left}
+.place i {color:#a00037;
+margin:5px}
+
+.name h2{font-family: 'Patrick Hand', cursive;
+            font-size: 30px;
+            color:black;
+          text-align:left}
+.name i {color:#a00037;
+margin:5px}
+
+
+footer {clear:both;
+  font-family: 'Patrick Hand', cursive;
+            font-size: 20px;
+            color:black;
+          text-align: center;}
