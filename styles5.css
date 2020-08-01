@@ -14,46 +14,133 @@ a:hover{color:#d81b60}
 }
 .navbar_logo{font-size:50px;
             font-family: 'Patrick Hand', cursive;
-            Color:black;
-}
+          }
 
 .navbar_logo i {color:white
 }
 .navbar_menu{font-family: 'Patrick Hand', cursive;
             font-size: 30px;
-            color:black;
             display:flex;
           list-style: none;
           padding-left: 0;
         }
 .navbar_menu li{padding:8px 12px;
 }
-
+.navbar_links {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
 .navbar_links i {  text-decoration: none;
                     color:white;
                   display:flex;}
 .navbar_links i:hover{color:#d81b60}
 
+
+.navbar_toggleBtn{
+    text-decoration: none;
+    display:none;
+    position: absolute;
+    right:32px;
+    font-size:24px;
+    color:white;
+}
+
+.navbar_toggleBtn i:hover{color:#d81b60
+}
+
+
+@media screen and (max-width:768px){
+.navbar{
+    flex-direction: column;
+    align-items: flex-start;
+    padding:8px 12px;
+}
+.navbar_menu{
+    display:none;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+}
+.navbar_menu li{
+    width:100%;
+    text-align:center;
+}
+.navbar_links{
+    display:none;
+    justify-content: center;
+    width:100%;
+}
+
+.navbar_toggleBtn{
+    display:block;
+}
+
+.navbar_menu.active,
+.navbar_links.active{
+    display:flex;
+}
+}
 /*본문 */
 
 .parent{width:90%;
           margin: 10px auto;
           display:flex;
-        justify-content:space-between;}
-.case1{flex:1;, width:22%;text-align: center;font-family: 'Patrick Hand', cursive; color:#d81b60; size:600px; box-sizing: border-box; border:1px grey solid}
-.case1 p{color:black;font-family: 'Patrick Hand', cursive }
+          justify-content:space-between;
+        }
+.case1{flex:1; 
+      width:22%;
+      text-align: center;
+      font-family: 'Patrick Hand', cursive; 
+      color:#d81b60; 
+      size:600px; 
+      box-sizing: border-box; 
+      border:1px grey solid
+    }
 
-.case2{flex:1;, width:22%; margin:0px 5%; text-align: center;font-family: 'Patrick Hand', cursive;color:#d81b60; size:100px; box-sizing: border-box; border:1px grey solid}
-.case2 p{color:black;font-family: 'Patrick Hand', cursive }
+.case1 p{color:black;
+        font-family: 'Patrick Hand', cursive 
+      }
 
-.case3{flex:1;, width:22%; text-align: center;font-family: 'Patrick Hand', cursive;color:#d81b60; size:100px; box-sizing: border-box; border:1px grey solid}
-.case3 p{color:black;font-family: 'Patrick Hand', cursive }
+.case2{flex:1; 
+        width:22%; 
+        margin:0px 5%; 
+        text-align: center;
+        font-family: 'Patrick Hand', cursive;
+        color:#d81b60; 
+        size:100px; 
+        box-sizing: border-box; 
+        border:1px grey solid
+      }
+.case2 p{color:black;
+          font-family: 'Patrick Hand', cursive 
+        }
 
-.case4{flex:1;, width:22%;margin:0px 5%; text-align: center;font-family: 'Patrick Hand', cursive;color:#d81b60; size:100px; box-sizing: border-box; border:1px grey solid}
-.case4 p{color:black;font-family: 'Patrick Hand', cursive }
+.case3{flex:1;
+        width:22%; 
+        text-align: center;
+        font-family: 'Patrick Hand', cursive;
+        color:#d81b60; size:100px; 
+        box-sizing: border-box; 
+        border:1px grey solid}
+.case3 p{color:black;
+        font-family: 'Patrick Hand', cursive }
+
+.case4{flex:1; 
+      width:22%;
+      margin:0px 5%; 
+      text-align: center;
+      font-family: 'Patrick Hand', cursive;
+      color:#d81b60; 
+      size:100px; 
+      box-sizing: border-box; 
+      border:1px grey solid
+    }
+.case4 p{color:black;
+          font-family: 'Patrick Hand', cursive }
 
 footer {clear:both;
-  font-family: 'Patrick Hand', cursive;
-            font-size: 20px;
-            color:black;
-          text-align: center;}
+        font-family: 'Patrick Hand', cursive;
+        font-size: 20px;
+        color:black;
+        text-align: center;}

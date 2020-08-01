@@ -14,25 +14,73 @@ a:hover{color:#d81b60}
 }
 .navbar_logo{font-size:50px;
             font-family: 'Patrick Hand', cursive;
-            Color:black;
-}
+          }
 
 .navbar_logo i {color:white
 }
 .navbar_menu{font-family: 'Patrick Hand', cursive;
             font-size: 30px;
-            color:black;
             display:flex;
           list-style: none;
           padding-left: 0;
         }
 .navbar_menu li{padding:8px 12px;
 }
-
+.navbar_links {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
 .navbar_links i {  text-decoration: none;
                     color:white;
                   display:flex;}
 .navbar_links i:hover{color:#d81b60}
+
+
+.navbar_toggleBtn{
+    text-decoration: none;
+    display:none;
+    position: absolute;
+    right:32px;
+    font-size:24px;
+    color:white;
+}
+
+.navbar_toggleBtn i:hover{color:#d81b60
+}
+
+
+@media screen and (max-width:768px){
+.navbar{
+    flex-direction: column;
+    align-items: flex-start;
+    padding:8px 12px;
+}
+.navbar_menu{
+    display:none;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+}
+.navbar_menu li{
+    width:100%;
+    text-align:center;
+}
+.navbar_links{
+    display:none;
+    justify-content: center;
+    width:100%;
+}
+
+.navbar_toggleBtn{
+    display:block;
+}
+
+.navbar_menu.active,
+.navbar_links.active{
+    display:flex;
+}
+}
 
 /*본문 */
 .main {margin-right:10px}
@@ -43,35 +91,35 @@ justify-content:center;
 }
 img{width:250px; height:250px}
 main p{font-family: 'Patrick Hand', cursive;
-            font-size: 25px;
-            color:black;
-            padding:5px;
+        font-size: 25px;
+        color:black;
+        padding:5px;
 
 }
 .birthdate h2{font-family: 'Patrick Hand', cursive;
-            font-size: 30px;
-            color:black;
-          text-align:left}
+              font-size: 30px;
+              color:black;
+              text-align:left}
 .birthdate i {color:#a00037;
-margin:5px}
+              margin:5px}
 
 .place h2{font-family: 'Patrick Hand', cursive;
-            font-size: 30px;
-            color:black;
+          font-size: 30px;
+          color:black;
           text-align:left}
 .place i {color:#a00037;
-margin:5px}
+          margin:5px}
 
 .name h2{font-family: 'Patrick Hand', cursive;
-            font-size: 30px;
-            color:black;
+          font-size: 30px;
+          color:black;
           text-align:left}
 .name i {color:#a00037;
 margin:5px}
 
 
 footer {clear:both;
-  font-family: 'Patrick Hand', cursive;
-            font-size: 20px;
-            color:black;
-          text-align: center;}
+        font-family: 'Patrick Hand', cursive;
+        font-size: 20px;
+        color:black;
+        text-align: center;}

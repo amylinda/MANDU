@@ -14,42 +14,100 @@ a:hover{color:#d81b60}
 }
 .navbar_logo{font-size:50px;
             font-family: 'Patrick Hand', cursive;
-            Color:black;
-}
+          }
 
 .navbar_logo i {color:white
 }
 .navbar_menu{font-family: 'Patrick Hand', cursive;
             font-size: 30px;
-            color:black;
             display:flex;
           list-style: none;
           padding-left: 0;
         }
 .navbar_menu li{padding:8px 12px;
 }
-
+.navbar_links {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
 .navbar_links i {  text-decoration: none;
                     color:white;
                   display:flex;}
 .navbar_links i:hover{color:#d81b60}
 
+
+.navbar_toggleBtn{
+    text-decoration: none;
+    display:none;
+    position: absolute;
+    right:32px;
+    font-size:24px;
+    color:white;
+}
+
+.navbar_toggleBtn i:hover{color:#d81b60
+}
+
+
+@media screen and (max-width:768px){
+.navbar{
+    flex-direction: column;
+    align-items: flex-start;
+    padding:8px 12px;
+}
+.navbar_menu{
+    display:none;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+}
+.navbar_menu li{
+    width:100%;
+    text-align:center;
+}
+.navbar_links{
+    display:none;
+    justify-content: center;
+    width:100%;
+}
+.navbar_links i {  text-decoration: none;
+                    color:white;
+                  display:flex;}
+.navbar_links i:hover{color:#d81b60}
+
+
+.navbar_toggleBtn{
+    display:block;
+}
+
+.navbar_menu.active,
+.navbar_links.active{
+    display:flex;
+}
+}
+
 /*본문 */
 
 .parent{box-sizing: border-box;
-outline:none;
-font-family: 'Patrick Hand', cursive;display:flex;
-flex-direction:row;
-margin-top:3%}
-.bigbox1{
-  flex:1;width:30%;height:400px;padding-left: 30px;font-family: 'Patrick Hand', cursive;
-font-size:20px}
-  .bigbox2{flex:1; width:70%; height:400px;font-family: 'Patrick Hand', cursive;}
+        outline:none;
+        font-family: 'Patrick Hand', cursive;
+        display:flex;
+        flex-direction:row;
+        margin-top:3%}
+.bigbox1{flex:1;
+          width:30%;
+          height:400px;
+          padding-left: 30px;
+          font-family: 'Patrick Hand', cursive;
+          font-size:20px}
+.bigbox2{flex:1; 
+  width:70%; 
+  height:400px;
+  font-family: 'Patrick Hand', cursive;}
 
-.wrapper{
-
-width:80%;
-  padding:0 10px;
+.wrapper{width:80%;
+        padding:0 10px;
 }
 
 .contact-form{
@@ -63,8 +121,6 @@ width:80%;
   display:flex;
   box-shadow: 0 0 10px rbga (0,0,0,0);
   outline:none;
-
-
 }
 
 .input-fields{
@@ -73,7 +129,6 @@ display:flex;
 flex-direction: column;
 margin-right:4%;font-size:20px;
 outline:none;
-
 }
 
 .input-fields,
@@ -125,18 +180,17 @@ outline:none;}
 }
 
 h2{font-family: 'Patrick Hand', cursive;
-            font-size: 30px;
-            color:black;
-          text-align: center;
+  font-size: 30px;
+  color:black;
+  text-align: center;
+  }
 
-      }
-      footer {clear:both;
+footer {clear:both;
         font-family: 'Patrick Hand', cursive;
-                  font-size: 20px;
-                  color:black;
-                text-align: center;
-                position:absolute;
-                left: 30%;
-                top:110%
-
-               }
+        font-size: 20px;
+        color:black;
+        text-align: center;
+        position:absolute;
+        left: 30%;
+        top:110%
+                }
